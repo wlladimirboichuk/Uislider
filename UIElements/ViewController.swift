@@ -10,9 +10,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //Присвоение значения слайдеру.
         slider.value = 1
-        
+        //Приведение типа
         label.text = String(slider.value)
         label.font = label.font.withSize(35)
         label.textAlignment = .center
@@ -20,6 +20,7 @@ class ViewController: UIViewController {
         
         segmentedControl.insertSegment(withTitle: "Third", at: 2, animated: true)
         
+        // Присваивание значений сладеру.
         slider.minimumValue = 0
         slider.maximumValue = 1
         slider.minimumTrackTintColor = .yellow
